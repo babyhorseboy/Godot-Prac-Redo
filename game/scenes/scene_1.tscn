@@ -1,185 +1,10 @@
-[gd_scene load_steps=96 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://resources/isoObjects.tres" type="TileSet" id=1]
 [ext_resource path="res://resources/isoFloors.tres" type="TileSet" id=2]
 [ext_resource path="res://resources/isoWalls.tres" type="TileSet" id=3]
-[ext_resource path="res://scenes/KinematicBody2D.gd" type="Script" id=4]
-[ext_resource path="res://assets/character/run/Male_1_Run1.png" type="Texture" id=5]
-[ext_resource path="res://assets/character/run/Male_2_Run2.png" type="Texture" id=6]
-[ext_resource path="res://assets/character/run/Male_2_Run9.png" type="Texture" id=7]
-[ext_resource path="res://assets/character/run/Male_1_Run7.png" type="Texture" id=8]
-[ext_resource path="res://assets/character/run/Male_3_Run6.png" type="Texture" id=9]
-[ext_resource path="res://assets/character/run/Male_1_Run0.png" type="Texture" id=10]
-[ext_resource path="res://assets/character/run/Male_3_Run5.png" type="Texture" id=11]
-[ext_resource path="res://assets/character/run/Male_4_Run3.png" type="Texture" id=12]
-[ext_resource path="res://assets/character/run/Male_4_Run7.png" type="Texture" id=13]
-[ext_resource path="res://assets/character/run/Male_1_Run8.png" type="Texture" id=14]
-[ext_resource path="res://assets/character/run/Male_4_Run8.png" type="Texture" id=15]
-[ext_resource path="res://assets/character/run/Male_0_Run5.png" type="Texture" id=16]
-[ext_resource path="res://assets/character/run/Male_5_Run0.png" type="Texture" id=17]
-[ext_resource path="res://assets/character/run/Male_0_Run8.png" type="Texture" id=18]
-[ext_resource path="res://assets/character/run/Male_1_Run9.png" type="Texture" id=19]
-[ext_resource path="res://assets/character/run/Male_3_Run2.png" type="Texture" id=20]
-[ext_resource path="res://assets/character/run/Male_4_Run9.png" type="Texture" id=21]
-[ext_resource path="res://assets/character/run/Male_0_Run4.png" type="Texture" id=22]
-[ext_resource path="res://assets/character/run/Male_5_Run1.png" type="Texture" id=23]
-[ext_resource path="res://assets/character/run/Male_5_Run2.png" type="Texture" id=24]
-[ext_resource path="res://assets/character/run/Male_3_Run3.png" type="Texture" id=25]
-[ext_resource path="res://assets/character/run/Male_5_Run3.png" type="Texture" id=26]
-[ext_resource path="res://assets/character/run/Male_5_Run4.png" type="Texture" id=27]
-[ext_resource path="res://assets/character/run/Male_2_Run5.png" type="Texture" id=28]
-[ext_resource path="res://assets/character/run/Male_0_Run7.png" type="Texture" id=29]
-[ext_resource path="res://assets/character/run/Male_2_Run1.png" type="Texture" id=30]
-[ext_resource path="res://assets/character/run/Male_2_Run3.png" type="Texture" id=31]
-[ext_resource path="res://assets/character/run/Male_3_Run4.png" type="Texture" id=32]
-[ext_resource path="res://assets/character/run/Male_1_Run5.png" type="Texture" id=33]
-[ext_resource path="res://assets/character/run/Male_1_Run6.png" type="Texture" id=34]
-[ext_resource path="res://assets/character/run/Male_2_Run7.png" type="Texture" id=35]
-[ext_resource path="res://assets/character/run/Male_2_Run0.png" type="Texture" id=36]
-[ext_resource path="res://assets/character/run/Male_3_Run7.png" type="Texture" id=37]
-[ext_resource path="res://assets/character/run/Male_2_Run8.png" type="Texture" id=38]
-[ext_resource path="res://assets/character/run/Male_3_Run8.png" type="Texture" id=39]
-[ext_resource path="res://assets/character/run/Male_1_Run3.png" type="Texture" id=40]
-[ext_resource path="res://assets/character/run/Male_2_Run4.png" type="Texture" id=41]
-[ext_resource path="res://assets/character/run/Male_3_Run1.png" type="Texture" id=42]
-[ext_resource path="res://assets/character/run/Male_4_Run0.png" type="Texture" id=43]
-[ext_resource path="res://assets/character/run/Male_1_Run2.png" type="Texture" id=44]
-[ext_resource path="res://assets/character/run/Male_4_Run4.png" type="Texture" id=45]
-[ext_resource path="res://assets/character/run/Male_4_Run6.png" type="Texture" id=46]
-[ext_resource path="res://assets/character/run/Male_3_Run9.png" type="Texture" id=47]
-[ext_resource path="res://assets/character/run/Male_0_Run3.png" type="Texture" id=48]
-[ext_resource path="res://assets/character/run/Male_0_Run1.png" type="Texture" id=49]
-[ext_resource path="res://assets/character/run/Male_0_Run6.png" type="Texture" id=50]
-[ext_resource path="res://assets/character/run/Male_4_Run5.png" type="Texture" id=51]
-[ext_resource path="res://assets/character/run/Male_5_Run5.png" type="Texture" id=52]
-[ext_resource path="res://assets/character/run/Male_3_Run0.png" type="Texture" id=53]
-[ext_resource path="res://assets/character/run/Male_4_Run1.png" type="Texture" id=54]
-[ext_resource path="res://assets/character/run/Male_0_Run2.png" type="Texture" id=55]
-[ext_resource path="res://assets/character/run/Male_4_Run2.png" type="Texture" id=56]
-[ext_resource path="res://assets/character/run/Male_0_Run9.png" type="Texture" id=57]
-[ext_resource path="res://assets/character/run/Male_0_Run0.png" type="Texture" id=58]
-[ext_resource path="res://assets/character/run/Male_1_Run4.png" type="Texture" id=59]
-[ext_resource path="res://assets/character/run/Male_2_Run6.png" type="Texture" id=60]
-[ext_resource path="res://assets/character/run/Male_7_Run5.png" type="Texture" id=61]
-[ext_resource path="res://assets/character/run/Male_7_Run0.png" type="Texture" id=62]
-[ext_resource path="res://assets/character/run/Male_7_Run1.png" type="Texture" id=63]
-[ext_resource path="res://assets/character/run/Male_7_Run6.png" type="Texture" id=64]
-[ext_resource path="res://assets/character/run/Male_7_Run4.png" type="Texture" id=65]
-[ext_resource path="res://assets/character/run/Male_6_Run1.png" type="Texture" id=66]
-[ext_resource path="res://assets/character/run/Male_5_Run7.png" type="Texture" id=67]
-[ext_resource path="res://assets/character/run/Male_6_Run8.png" type="Texture" id=68]
-[ext_resource path="res://assets/character/run/Male_7_Run2.png" type="Texture" id=69]
-[ext_resource path="res://assets/character/run/Male_6_Run5.png" type="Texture" id=70]
-[ext_resource path="res://assets/character/run/Male_5_Run6.png" type="Texture" id=71]
-[ext_resource path="res://assets/character/run/Male_6_Run9.png" type="Texture" id=72]
-[ext_resource path="res://assets/character/run/Male_6_Run4.png" type="Texture" id=73]
-[ext_resource path="res://assets/character/run/Male_7_Run3.png" type="Texture" id=74]
-[ext_resource path="res://assets/character/run/Male_7_Run9.png" type="Texture" id=75]
-[ext_resource path="res://assets/character/run/Male_6_Run7.png" type="Texture" id=76]
-[ext_resource path="res://assets/character/run/Male_6_Run3.png" type="Texture" id=77]
-[ext_resource path="res://assets/character/run/Male_7_Run7.png" type="Texture" id=78]
-[ext_resource path="res://assets/character/run/Male_6_Run0.png" type="Texture" id=79]
-[ext_resource path="res://assets/character/run/Male_6_Run6.png" type="Texture" id=80]
-[ext_resource path="res://assets/character/run/Male_5_Run8.png" type="Texture" id=81]
-[ext_resource path="res://assets/character/run/Male_5_Run9.png" type="Texture" id=82]
-[ext_resource path="res://assets/character/run/Male_6_Run2.png" type="Texture" id=83]
-[ext_resource path="res://assets/character/run/Male_7_Run8.png" type="Texture" id=84]
-[ext_resource path="res://scenes/AnimatedSprite.gd" type="Script" id=85]
-[ext_resource path="res://assets/character/idle/Male_0_Idle0.png" type="Texture" id=86]
-[ext_resource path="res://assets/character/idle/Male_1_Idle0.png" type="Texture" id=87]
-[ext_resource path="res://assets/character/idle/Male_4_Idle0.png" type="Texture" id=88]
-[ext_resource path="res://assets/character/idle/Male_5_Idle0.png" type="Texture" id=89]
-[ext_resource path="res://assets/character/idle/Male_6_Idle0.png" type="Texture" id=90]
-[ext_resource path="res://assets/character/idle/Male_3_Idle0.png" type="Texture" id=91]
-[ext_resource path="res://assets/character/idle/Male_7_Idle0.png" type="Texture" id=92]
-[ext_resource path="res://assets/character/idle/Male_2_Idle0.png" type="Texture" id=93]
-
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 17.1137
-height = 50.4247
-
-[sub_resource type="SpriteFrames" id=2]
-animations = [ {
-"frames": [ ExtResource( 17 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 52 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 81 ), ExtResource( 82 ) ],
-"loop": true,
-"name": "runLeft",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 90 ) ],
-"loop": true,
-"name": "idleLeftUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 86 ) ],
-"loop": true,
-"name": "idleRightUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 36 ), ExtResource( 30 ), ExtResource( 6 ), ExtResource( 31 ), ExtResource( 41 ), ExtResource( 28 ), ExtResource( 60 ), ExtResource( 35 ), ExtResource( 38 ), ExtResource( 7 ) ],
-"loop": true,
-"name": "runRightDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 62 ), ExtResource( 63 ), ExtResource( 69 ), ExtResource( 74 ), ExtResource( 65 ), ExtResource( 61 ), ExtResource( 64 ), ExtResource( 78 ), ExtResource( 84 ), ExtResource( 75 ) ],
-"loop": true,
-"name": "runUp",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 91 ) ],
-"loop": true,
-"name": "idleDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 89 ) ],
-"loop": true,
-"name": "idleLeft",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 88 ) ],
-"loop": true,
-"name": "idleLeftDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 87 ) ],
-"loop": true,
-"name": "idleRight",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 92 ) ],
-"loop": true,
-"name": "idleUp",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 79 ), ExtResource( 66 ), ExtResource( 83 ), ExtResource( 77 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 80 ), ExtResource( 76 ), ExtResource( 68 ), ExtResource( 72 ) ],
-"loop": true,
-"name": "runLeftUp",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 43 ), ExtResource( 54 ), ExtResource( 56 ), ExtResource( 12 ), ExtResource( 45 ), ExtResource( 51 ), ExtResource( 46 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "runLeftDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 53 ), ExtResource( 42 ), ExtResource( 20 ), ExtResource( 25 ), ExtResource( 32 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 47 ) ],
-"loop": true,
-"name": "runDown",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 93 ) ],
-"loop": true,
-"name": "idleRightDown",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 58 ), ExtResource( 49 ), ExtResource( 55 ), ExtResource( 48 ), ExtResource( 22 ), ExtResource( 16 ), ExtResource( 50 ), ExtResource( 29 ), ExtResource( 18 ), ExtResource( 57 ) ],
-"loop": true,
-"name": "runRightUp",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 10 ), ExtResource( 5 ), ExtResource( 44 ), ExtResource( 40 ), ExtResource( 59 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 8 ), ExtResource( 14 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "runRight",
-"speed": 10.0
-} ]
+[ext_resource path="res://characters/KinematicBody2D.tscn" type="PackedScene" id=4]
+[ext_resource path="res://props/stoneWallAged_E.tscn" type="PackedScene" id=94]
 
 [node name="scene_1" type="Node2D"]
 __meta__ = {
@@ -190,14 +15,21 @@ __meta__ = {
 mode = 1
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 256, 128 )
+cell_y_sort = true
 format = 1
-tile_data = PoolIntArray( -393215, 14, 0, -393214, 14, 0, -393213, 14, 0, -393212, 14, 0, -393211, 14, 0, -393210, 14, 0, -393209, 14, 0, -393208, 14, 0, -393207, 12, 0, -393206, 12, 0, -393205, 12, 0, -393204, 12, 0, -393203, 12, 0, -393202, 12, 0, -393201, 12, 0, -393200, 12, 0, -393199, 12, 0, -393198, 12, 0, -327679, 13, 0, -327678, 13, 0, -327677, 13, 0, -327676, 14, 0, -327675, 14, 0, -327674, 9, 0, -327673, 14, 0, -327672, 14, 0, -327671, 13, 0, -327670, 13, 0, -327669, 12, 0, -327668, 13, 0, -327667, 13, 0, -327666, 12, 0, -327665, 13, 0, -327664, 12, 0, -327663, 12, 0, -327662, 12, 0, -262143, 14, 0, -262142, 14, 0, -262141, 13, 0, -262140, 13, 0, -262139, 14, 0, -262138, 14, 0, -262137, 14, 0, -262136, 13, 0, -262135, 13, 0, -262134, 12, 0, -262133, 12, 0, -262132, 13, 0, -262131, 13, 0, -262130, 12, 0, -262129, 13, 0, -262128, 13, 0, -262127, 13, 0, -262126, 13, 0, -196607, 13, 0, -196606, 13, 0, -196605, 13, 0, -196604, 13, 0, -196603, 14, 0, -196602, 13, 0, -196601, 13, 0, -196600, 13, 0, -196599, 13, 0, -196598, 12, 0, -196597, 13, 0, -196596, 13, 0, -196595, 12, 0, -196594, 12, 0, -196593, 13, 0, -196592, 12, 0, -196591, 13, 0, -196590, 12, 0, -131071, 13, 0, -131070, 9, 0, -131069, 14, 0, -131068, 13, 0, -131067, 13, 0, -131066, 13, 0, -131065, 13, 0, -131064, 13, 0, -131063, 13, 0, -131062, 13, 0, -131061, 13, 0, -131060, 12, 0, -131059, 13, 0, -131058, 13, 0, -131057, 13, 0, -131056, 13, 0, -131055, 13, 0, -131054, 13, 0, -65535, 13, 0, -65534, 14, 0, -65533, 14, 0, -65532, 13, 0, -65531, 10, 0, -65530, 14, 0, -65529, 13, 0, -65528, 13, 0, -65527, 13, 0, -65526, 13, 0, -65525, 13, 0, -65524, 13, 0, -65523, 13, 0, -65522, 13, 0, -65521, 12, 0, -65520, 13, 0, -65519, 12, 0, -65518, 12, 0, 1, 13, 0, 2, 13, 0, 3, 14, 0, 4, 14, 0, 5, 14, 0, 6, 14, 0, 7, 13, 0, 8, 14, 0, 9, 13, 0, 10, 12, 0, 11, 13, 0, 12, 13, 0, 13, 12, 0, 14, 12, 0, 15, 12, 0, 16, 12, 0, 17, 13, 0, 18, 12, 0 )
+tile_data = PoolIntArray( -393215, 14, 0, -393214, 14, 0, -393213, 14, 0, -393212, 14, 0, -393211, 14, 0, -393210, 14, 0, -393209, 14, 0, -393208, 14, 0, -393207, 12, 0, -393206, 12, 0, -393205, 12, 0, -393204, 12, 0, -393203, 12, 0, -393202, 12, 0, -393201, 12, 0, -393200, 12, 0, -393199, 12, 0, -393198, 12, 0, -393197, 13, 0, -393196, 13, 0, -393195, 13, 0, -327679, 13, 0, -327678, 13, 0, -327677, 13, 0, -327676, 14, 0, -327675, 14, 0, -327674, 9, 0, -327673, 14, 0, -327672, 14, 0, -327671, 13, 0, -327670, 13, 0, -327669, 12, 0, -327668, 13, 0, -327667, 13, 0, -327666, 12, 0, -327665, 13, 0, -327664, 12, 0, -327663, 12, 0, -327662, 12, 0, -327661, 13, 0, -327660, 13, 0, -327659, 13, 0, -262143, 14, 0, -262142, 14, 0, -262141, 13, 0, -262140, 13, 0, -262139, 14, 0, -262138, 14, 0, -262137, 14, 0, -262136, 13, 0, -262135, 13, 0, -262134, 12, 0, -262133, 12, 0, -262132, 13, 0, -262131, 13, 0, -262130, 12, 0, -262129, 13, 0, -262128, 13, 0, -262127, 13, 0, -262126, 13, 0, -262125, 13, 0, -262124, 13, 0, -262123, 13, 0, -196607, 13, 0, -196606, 13, 0, -196605, 13, 0, -196604, 13, 0, -196603, 14, 0, -196602, 13, 0, -196601, 13, 0, -196600, 13, 0, -196599, 13, 0, -196598, 12, 0, -196597, 13, 0, -196596, 13, 0, -196595, 12, 0, -196594, 12, 0, -196593, 13, 0, -196592, 12, 0, -196591, 13, 0, -196590, 12, 0, -196589, 13, 0, -196588, 13, 0, -196587, 13, 0, -131071, 13, 0, -131070, 9, 0, -131069, 14, 0, -131068, 13, 0, -131067, 13, 0, -131066, 13, 0, -131065, 13, 0, -131064, 13, 0, -131063, 13, 0, -131062, 13, 0, -131061, 13, 0, -131060, 12, 0, -131059, 13, 0, -131058, 13, 0, -131057, 13, 0, -131056, 13, 0, -131055, 13, 0, -131054, 13, 0, -131053, 13, 0, -131052, 13, 0, -131051, 13, 0, -65535, 13, 0, -65534, 14, 0, -65533, 14, 0, -65532, 13, 0, -65531, 10, 0, -65530, 14, 0, -65529, 13, 0, -65528, 13, 0, -65527, 13, 0, -65526, 13, 0, -65525, 13, 0, -65524, 13, 0, -65523, 13, 0, -65522, 13, 0, -65521, 12, 0, -65520, 13, 0, -65519, 12, 0, -65518, 12, 0, -65517, 13, 0, -65516, 13, 0, -65515, 13, 0, 1, 13, 0, 2, 13, 0, 3, 14, 0, 4, 14, 0, 5, 14, 0, 6, 14, 0, 7, 13, 0, 8, 14, 0, 9, 13, 0, 10, 12, 0, 11, 13, 0, 12, 13, 0, 13, 12, 0, 14, 12, 0, 15, 12, 0, 16, 12, 0, 17, 13, 0, 18, 12, 0, 19, 13, 0, 20, 13, 0, 21, 13, 0, 65544, 13, 0, 65545, 13, 0, 65546, 13, 0, 65547, 13, 0, 65548, 13, 0, 65549, 13, 0, 65550, 13, 0, 65551, 13, 0, 65552, 13, 0, 65553, 13, 0, 65554, 13, 0, 65555, 13, 0, 65556, 13, 0, 65557, 13, 0, 131080, 13, 0, 131081, 13, 0, 131082, 13, 0, 131083, 13, 0, 131084, 13, 0, 131085, 13, 0, 131086, 13, 0, 131087, 13, 0, 131088, 13, 0, 131089, 13, 0, 131090, 13, 0, 131091, 13, 0, 131092, 13, 0, 131093, 13, 0, 196616, 13, 0, 196617, 13, 0, 196618, 13, 0, 196619, 13, 0, 196620, 13, 0, 196621, 13, 0, 196622, 13, 0, 196623, 13, 0, 196624, 13, 0, 196625, 13, 0, 196626, 13, 0, 196627, 13, 0, 196628, 13, 0, 196629, 13, 0, 262152, 13, 0, 262153, 13, 0, 262154, 13, 0, 262155, 13, 0, 262156, 13, 0, 262157, 13, 0, 262158, 13, 0, 262159, 13, 0, 262160, 13, 0, 262161, 13, 0, 262162, 13, 0, 262163, 13, 0, 262164, 13, 0, 262165, 13, 0, 327688, 13, 0, 327689, 13, 0, 327690, 13, 0, 327691, 13, 0, 327692, 13, 0, 327693, 13, 0, 327694, 13, 0, 327695, 13, 0, 327696, 13, 0, 327697, 13, 0, 327698, 13, 0, 327699, 13, 0, 327700, 13, 0, 327701, 13, 0, 393224, 13, 0, 393225, 13, 0, 393226, 13, 0, 393227, 13, 0, 393228, 13, 0, 393229, 13, 0, 393230, 13, 0, 393231, 13, 0, 393232, 13, 0, 393233, 13, 0, 393234, 13, 0, 393235, 13, 0, 393236, 13, 0, 393237, 13, 0, 458760, 13, 0, 458761, 13, 0, 458762, 13, 0, 458763, 13, 0, 458764, 13, 0, 458765, 13, 0, 458766, 13, 0, 458767, 13, 0, 458768, 13, 0, 458769, 13, 0, 458770, 13, 0, 458771, 13, 0, 458772, 13, 0, 458773, 13, 0 )
 
 [node name="wallsMap_1" type="TileMap" parent="."]
 mode = 1
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 256, 128 )
+cell_y_sort = true
 format = 1
+
+[node name="YSort" type="YSort" parent="wallsMap_1"]
+
+[node name="stoneWallAged_E" parent="wallsMap_1/YSort" instance=ExtResource( 94 )]
+position = Vector2( 916.203, 297.214 )
 
 [node name="objectsMap_1" type="TileMap" parent="."]
 mode = 1
@@ -205,27 +37,5 @@ tile_set = ExtResource( 1 )
 cell_size = Vector2( 256, 128 )
 format = 1
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 976.534, 427.251 )
-script = ExtResource( 4 )
-
-[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
-position = Vector2( 1.39746, -0.437927 )
-current = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( 2.77612, 67.9256 )
-rotation = -1.5624
-shape = SubResource( 1 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
-position = Vector2( -0.897522, -119.398 )
-frames = SubResource( 2 )
-animation = "idleUp"
-script = ExtResource( 85 )
-
-[node name="TurnAxis" type="Position2D" parent="KinematicBody2D"]
-
-[node name="CastPoint" type="Position2D" parent="KinematicBody2D/TurnAxis"]
-position = Vector2( 60, 0 )
-[connection signal="movement" from="KinematicBody2D" to="KinematicBody2D/AnimatedSprite" method="_on_KinematicBody2D_movement"]
+[node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1020.78, 287.984 )
